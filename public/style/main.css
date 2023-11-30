@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    flex-grow: 1;
+}
+
+.card{
+    height: 500px;
+    width:450px;
+    background-color: transparent;
+    margin: 150px 700px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.form{
+    margin: 20px 20px;
+}
+
+input[type=text]{
+    height: 40px;
+    width: 200px;
+    font-size: 25px;
+    font-family: 'Rubik', sans-serif;
+    border-radius: 20px;
+    padding-left: 10px;
+    border: 1px solid #000;
+    outline: none;
+}
+
+.btn{
+    height: 35px;
+    width: 90px;
+    background-color: transparent;
+    margin-top: 4px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 100 !important;
+    margin-left: 10px;
+    border: 1px solid #000;
+    outline: none;
+    cursor: pointer;
+}
+
+.timezone{
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 1rem;
+    font-family: Helvetica;
+}
+
+.temperature{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: Helvetica;
+}
+
+.time{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 1rem;
+    font-family: Helvetica;
+}
+
+.line{
+    width: auto;
+    margin: 15px;
+}
+
+.weather-container {
+    height: 75px;
+    width: 350px;
+    margin-top: 20px;
+    margin-left: 48px;
+    padding-top: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: Helvetica;
+    background-color: rgb(128, 128, 128, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.weather {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.weather p {
+    margin: 0;
+}
+
+.weather-icon {
+    max-width: 40px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.windspeed{
+    height: 75px;
+    width: 350px;
+    margin-top: 20px;
+    margin-left: 48px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 2rem;
+    font-family: Helvetica;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(128, 128, 128, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.humidity{
+    height: 75px;
+    width: 350px;
+    margin-top: 20px;
+    margin-left: 48px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: Helvetica;
+    background-color: rgb(128, 128, 128, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+} 
+
+.error{
+    margin: 250px 100px;
+    font-weight: 100;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+
+}
+
+.btn:active{
+    background-color: #000;
+    color: #fff;
+}
+
+footer{
+    text-align: center;
+    flex-shrink: 0;
+    padding: 10px;
+}

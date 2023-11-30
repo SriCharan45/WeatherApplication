@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="/style/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="card">
+        <form  method="POST" class="form">
+            <input type="text" name="name" id="name" placeholder="Search location.." >
+            <input type="submit" name="search" value="Search" class="btn" formaction="/">
+        </form>
+        <% if(content && content.location && content.location.timezone_id && content.location.localtime && content.current && content.current.temperature){ %>
+            <p class= "timezone"> <%= content.location.timezone_id %> </p>
+            <h1 class="temperature"> <%= content.current.temperature %>°C </h1>
+            <p class= "time"> <%= content.location.localtime %> </p>
+            <hr class="line">
+            <div class="weather-container">
+                <p class="weather"> <%= content.current.weather_descriptions %> </p> 
+                <img src="<%= content.current.weather_icons %>" alt="<%= content.current.weather_descriptions %>" class="weather-icon"> 
+            </div>
+            <div class="wind">
+                <p class="windspeed"> Wind Speed: <%= content.current.wind_speed %> </p>
+            </div>
+            <div class="humidity">
+                <p class="humidity-calc">Humidity: <%= content.current.humidity %> </p>
+            </div>
+            <% } else { %>
+                <h1 class="error">Search for the location.</h1>
+            <% } %>
+    </main>
+    <footer>
+        <p>Copyright © Charan </p>
+    </footer>
+</body>
+</html>
