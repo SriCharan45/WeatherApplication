@@ -25,10 +25,10 @@
                 <img src="<%= content.current.weather_icons %>" alt="<%= content.current.weather_descriptions %>" class="weather-icon"> 
             </div>
             <div class="wind">
-                <p class="windspeed"> Wind Speed: <%= content.current.wind_speed %> </p>
+                <p class="windspeed"> Wind Speed: <%= content.current.wind_speed %>km/h </p>
             </div>
             <div class="humidity">
-                <p class="humidity-calc">Humidity: <%= content.current.humidity %> </p>
+                <p class="humidity-calc">Humidity: <%= content.current.humidity %>% </p>
             </div>
             <% } else { %>
                 <h1 class="error">Search for the location.</h1>
